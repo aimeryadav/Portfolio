@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Outfit:wght@300;400;500;600;700;800&display=swap');
+@import "tailwindcss";
+
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --color-background: var(--bg-color);
+  --color-foreground: var(--fg-color);
+  --color-foreground-secondary: var(--fg-secondary);
+  --color-accent: var(--accent-color);
+  --color-accent-secondary: var(--accent-secondary);
+  --color-accent-highlight: var(--accent-highlight);
+  --color-secondary: var(--secondary-color);
+  --color-muted: var(--muted-color);
+  --color-border: var(--border-color);
+  --color-card: var(--card-color);
+  --color-card-border: var(--card-border);
+  --font-sans: "Inter", sans-serif;
+  --font-cinematic: "Outfit", sans-serif;
+}
+
+@layer base {
+  :root {
+    /* LIGHT MODE — "ARCTIC FLAME" */
+    --bg-color: #E8EFF5; /* Clear, crisp, unmistakable Arctic Flame background */
+    --fg-color: #050505; /* Black primary text */
+    --fg-secondary: #242424;
+    --muted-color: #555555;
+    --accent-color: #7A2635; /* Subtle Burgundy accent */
+    --accent-secondary: #641E2B;
+    --accent-highlight: #A94655;
+    --secondary-color: #DFE7EE; /* Arctic Flame surface */
+    --border-color: #CBD5E1;
+    --card-color: #F4F8FA; /* Clean elevated Arctic card surface */
+    --card-border: #CBD5E1;
+  }
+
+  .dark {
+    /* DARK MODE — BURGUNDY + DARK TEAL GREEN */
+    --bg-color: #071818; /* Deep Dark Teal Green */
+    --fg-color: #F5F1EC; /* Warm Off-White */
+    --fg-secondary: #B8C1BE;
+    --muted-color: #B8C1BE;
+    --accent-color: #A83252; /* Pink-shaded Burgundy */
+    --accent-secondary: #C04365;
+    --accent-highlight: #E06485; /* Light pink highlight */
+    --secondary-color: #0B2F2F; /* Secondary background / surface */
+    --border-color: #13423E; /* Dark Teal border */
+    --card-color: rgba(192, 67, 101, 0.21); /* 21% Intensity Burgundy with pink shade */
+    --card-border: rgba(224, 100, 133, 0.35);
+  }
+
+  html {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    transition: background-color 0.4s ease, color 0.4s ease;
+  }
+
+  body {
+    background-color: var(--bg-color);
+    color: var(--fg-color);
+    @apply font-sans antialiased overflow-x-hidden transition-colors duration-400 ease-in-out;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-sans font-bold tracking-tight text-foreground;
+  }
+}
+
+
+
+

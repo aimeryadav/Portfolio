@@ -37,14 +37,58 @@ export function ProjectsSection() {
               className={`flex flex-col ${index % 2 === 1 ? 'lg:flex-row-reverse' : 'lg:flex-row'} gap-8 lg:gap-16 items-center group`}
             >
               
-              {/* Project Image */}
-              <div className="w-full lg:w-3/5 overflow-hidden rounded-2xl relative bg-secondary aspect-[16/10] lg:aspect-auto lg:h-[600px] border border-border">
-                <img 
-                  src={project.image} 
-                  alt={project.title} 
-                  className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-in-out opacity-90 group-hover:opacity-100"
-                />
-                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
+              {/* Project Image(s) */}
+              <div className="w-full lg:w-3/5 overflow-hidden rounded-2xl relative bg-secondary aspect-[16/10] lg:aspect-auto lg:h-[600px] border border-border group/preview">
+                {project.videoUrl ? (
+                  <video 
+                    src={project.videoUrl} 
+                    autoPlay 
+                    loop 
+                    muted 
+                    playsInline
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-in-out opacity-90 group-hover:opacity-100"
+                  />
+                ) : project.images ? (
+                  <div className="w-full h-full flex overflow-x-auto snap-x snap-mandatory hide-scrollbar">
+                    {project.images.map((img, i) => (
+                      <div key={i} className="w-full h-full shrink-0 snap-center relative">
+                        <img 
+                          src={img} 
+                          alt={`${project.title} - ${i + 1}`} 
+                          className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-in-out opacity-90 group-hover:opacity-100"
+                        />
+                      </div>
+                    ))}
+                  </div>
+                ) : project.iframeUrl ? (
+                  <iframe 
+                    src={project.iframeUrl} 
+                    className="w-full h-full border-none object-cover opacity-90 group-hover:opacity-100 transition-opacity duration-500" 
+                    title={project.title}
+                    sandbox="allow-scripts allow-same-origin"
+                  />
+                ) : (
+                  <img 
+                    src={project.image} 
+                    alt={project.title} 
+                    className="w-full h-full object-cover transform group-hover:scale-105 transition-transform duration-1000 ease-in-out opacity-90 group-hover:opacity-100"
+                  />
+                )}
+                
+                {/* Optional overlay for iframe to prevent accidental clicking while scrolling, but allowing interaction on hover */}
+                {project.iframeUrl && (
+                  <div className="absolute inset-0 z-10 group-hover/preview:pointer-events-none transition-all duration-300 bg-transparent" />
+                )}
+                
+                {/* Pagination Indicators for Gallery */}
+                {project.images && project.images.length > 1 && (
+                  <div className="absolute bottom-4 left-0 right-0 flex justify-center gap-2 z-20 pointer-events-none">
+                    {project.images.map((_, i) => (
+                      <div key={i} className="w-2 h-2 rounded-full bg-white/50 backdrop-blur-sm" />
+                    ))}
+                  </div>
+                )}
+                <div className="absolute inset-0 bg-gradient-to-t from-background/80 via-transparent to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-500 pointer-events-none" />
               </div>
 
               {/* Project Details */}

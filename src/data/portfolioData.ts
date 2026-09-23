@@ -103,13 +103,14 @@ export const portfolioData = {
   projects: [
     {
       id: "project-1",
-      title: "Interactive Web Platform",
-      description: "A comprehensive web application demonstrating modern UI/UX principles, featuring real-time data handling and a responsive design.",
+      title: "Aimer Studios",
+      description: "A creative studio portfolio demonstrating modern UI/UX principles, featuring dynamic content and a responsive design.",
       category: "Development",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Node.js"],
+      technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop",
+      videoUrl: "/aimer-studios.mp4",
       github: "https://github.com",
-      live: "https://example.com"
+      live: "https://aimer-studios-gwifefdb6-aimer-yadav.vercel.app/"
     },
     {
       id: "project-2",

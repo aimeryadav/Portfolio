@@ -182,10 +182,17 @@ export const portfolioData = {
         "Framer Motion",
         "Lenis Scroll",
         "Lucide Icons",
-        "Responsive UI/UX"
+        "HTML5 & CSS3",
+        "JavaScript (ES6+)",
+        "Dark / Light Theming",
+        "Custom Cursor Engine",
+        "Responsive UI/UX",
+        "Git & GitHub",
+        "Vercel Deployment"
       ],
       image: "/portfolio-preview.jpg",
-      github: "https://github.com/aimeryadav/Portfolio"
+      github: "https://github.com/aimeryadav/Portfolio",
+      live: "https://portfolio-aimer-yadav.vercel.app/"
     },
     {
       id: "project-4",

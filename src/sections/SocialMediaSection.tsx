@@ -148,19 +148,19 @@ export function SocialMediaSection() {
         {/* Top Header Row */}
         <div className="flex flex-col sm:flex-row sm:items-end justify-between gap-4 mb-6">
           <div>
-            {/* CONNECT Pill with Burgundy theme styling */}
+            {/* CREATIVE WORK Pill with Burgundy theme styling */}
             <div className="inline-flex items-center px-2.5 py-0.5 rounded-full bg-[#7A2635]/10 dark:bg-[#FFA3B8]/15 border border-[#7A2635]/25 dark:border-[#FFA3B8]/30 text-[#7A2635] dark:text-[#FFA3B8] text-[10px] font-extrabold tracking-widest uppercase mb-2">
-              CONNECT
+              CREATIVE WORK • SOCIAL MEDIA
             </div>
 
-            {/* Title with highlighted "on Social" */}
+            {/* Title with highlighted "on Social Media" */}
             <h2 className="text-2xl sm:text-3xl md:text-4xl font-black uppercase tracking-tight text-foreground leading-tight">
-              Show Our Work <span className="text-[#7A2635] dark:text-[#FFA3B8]">on Social</span>
+              See Creative Work <span className="text-[#7A2635] dark:text-[#FFA3B8]">on Social Media</span>
             </h2>
 
             {/* Subtitle */}
             <p className="text-xs sm:text-sm text-foreground/70 mt-1 max-w-xl leading-relaxed">
-              Follow for our latest music drops, films, designs, and creative projects.
+              Stream original music, watch film projects & visual arts, explore audio production, and follow all creative releases.
             </p>
           </div>
 

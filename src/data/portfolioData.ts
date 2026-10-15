@@ -193,15 +193,6 @@ export const portfolioData = {
       image: "/portfolio-preview.jpg",
       github: "https://github.com/aimeryadav/Portfolio",
       live: "https://portfolio-aimer-yadav.vercel.app/"
-    },
-    {
-      id: "project-4",
-      title: "Debut EP Production",
-      description: "Written, composed, produced, mixed, and mastered a 5-track EP blending hip-hop and electronic elements.",
-      category: "Music",
-      technologies: ["Ableton Live", "Pro Tools", "Vocals", "Synths"],
-      image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070&auto=format&fit=crop",
-      live: "https://spotify.com"
     }
   ] as Project[],
   certificates: [

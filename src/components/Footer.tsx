@@ -6,6 +6,7 @@ const navItems = [
   { name: 'Skills', href: '#skills', symbol: '🛠️' },
   { name: 'Certificates', href: '#certificates', symbol: '📜' },
   { name: 'Resume', href: '#resume', symbol: '📄' },
+  { name: 'Social', href: '#social', symbol: '🌐' },
   { name: 'About', href: '#about', symbol: '👤' },
   { name: 'Contact', href: '#contact', symbol: '🤝' },
 ];

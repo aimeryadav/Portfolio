@@ -53,7 +53,7 @@ export const skillsCategories = [
   },
   {
     category: "TECHNOLOGY",
-    items: ["Development", "Programming (C, C++, Python, JavaScript)", "Web Development (HTML5, CSS3, JS)", "Computer Science (DSA, OOP, OS, Networks)", "Machine Learning", "NumPy", "Cloud Computing", "Blockchain", "Git / GitHub"]
+    items: ["Full-Stack Development (MERN)", "React.js", "Node.js", "Express.js", "MongoDB", "REST APIs & JWT", "TypeScript", "Tailwind CSS", "Vite", "Framer Motion", "Programming (C, C++, Python, JavaScript)", "Web Development (HTML5, CSS3, JS)", "Responsive UI/UX Design", "Computer Science (DSA, OOP, OS, Networks)", "Machine Learning", "NumPy", "Cloud Computing", "Blockchain", "Git / GitHub"]
   },
   {
     category: "AI & GENERATIVE AI",
@@ -69,9 +69,9 @@ export const softwareWall = [
   { category: "ADOBE", items: ["Premiere Pro", "After Effects", "Photoshop"] },
   { category: "VIDEO", items: ["DaVinci Resolve"] },
   { category: "AUDIO", items: ["Pro Tools", "Ableton Live"] },
-  { category: "DESIGN", items: ["Canva"] },
+  { category: "DESIGN", items: ["Canva", "Figma"] },
   { category: "PRODUCTIVITY", items: ["Microsoft Word", "Excel", "PowerPoint", "Outlook", "Teams"] },
-  { category: "DEVELOPMENT", items: ["Git", "GitHub"] }
+  { category: "DEVELOPMENT", items: ["VS Code", "Git", "GitHub"] }
 ];
 
 export const askAimerFaq = [
@@ -214,7 +214,7 @@ export const socialLinks = {
   spotify: "ADD LINK",
   github: "https://github.com/aimeryadav",
   linkedin: "https://www.linkedin.com/in/aimeryadav/",
-  email: "amit20052020@gmail.com"
+  email: "aimeryadav@gmail.com"
 };
 
 export const resumeLink = "/Amit_Resume.pdf";

@@ -16,25 +16,26 @@ const skillCategories: SkillCategory[] = [
     icon: "💻",
     title: "Computer Science & Development",
     col1: [
-      "C",
-      "C++",
-      "Python",
-      "JavaScript",
-      "HTML5",
-      "CSS3",
-      "Data Structures & Algorithms (DSA)",
-      "Object-Oriented Programming (OOP)",
-      "GitHub"
+      "Full-Stack MERN Architecture",
+      "React.js",
+      "Node.js & Express.js",
+      "MongoDB & Mongoose",
+      "RESTful APIs & Backend",
+      "JWT Authentication & Security",
+      "TypeScript",
+      "Tailwind CSS & Vite",
+      "Framer Motion"
     ],
     col2: [
-      "Web Development",
-      "Machine Learning",
-      "NumPy",
-      "Blockchain",
-      "Cloud Computing",
-      "Computer Networks",
-      "Operating Systems",
-      "Git"
+      "JavaScript (ES6+)",
+      "HTML5 & CSS3",
+      "Responsive UI/UX Design",
+      "C / C++",
+      "Python",
+      "Data Structures & Algorithms (DSA)",
+      "Object-Oriented Programming (OOP)",
+      "Git & GitHub",
+      "Computer Networks & OS"
     ]
   },
   {
@@ -206,24 +207,10 @@ export function SkillsSection() {
         
         {/* SKILLS —✦ Header */}
         <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-6 mb-8">
-          <div className="flex items-center gap-4">
+          <div>
             <h2 className="text-5xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight text-foreground leading-none">
               SKILLS
             </h2>
-            <div className="flex items-center flex-1 max-w-[200px] md:max-w-[280px]">
-              <div className="h-[2px] md:h-[3px] w-full bg-[#7A2635] dark:bg-[#A94655] transition-colors duration-300" />
-              <svg 
-                viewBox="0 0 48 48" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg" 
-                className="w-10 h-10 md:w-14 md:h-14 text-[#7A2635] dark:text-[#A94655] -ml-2 shrink-0 drop-shadow-sm transition-colors duration-300"
-              >
-                <path 
-                  d="M24 0 C24 13.25 34.75 24 48 24 C34.75 24 24 34.75 24 48 C24 34.75 13.25 24 0 24 C13.25 24 24 13.25 24 0 Z" 
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
           </div>
 
           {/* View toggle (Slides vs All) */}

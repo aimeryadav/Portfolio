@@ -121,7 +121,7 @@ export function ContactForm() {
                   <span>{submitError}</span>
                 </div>
                 <a
-                  href={`mailto:amit20052020@gmail.com?subject=${encodeURIComponent(formData.subject || 'Portfolio Inquiry')}&body=${encodeURIComponent(formData.message || '')}`}
+                  href={`mailto:aimeryadav@gmail.com?subject=${encodeURIComponent(formData.subject || 'Portfolio Inquiry')}&body=${encodeURIComponent(formData.message || '')}`}
                   className="underline font-bold shrink-0 hover:opacity-80 ml-6 sm:ml-0"
                 >
                   Open in Email App →

@@ -15,6 +15,7 @@ import { ExpertInSoftwareSection } from './sections/ExpertInSoftwareSection';
 import { ProjectsSection } from './sections/ProjectsSection';
 import { CertificatesSection } from './sections/CertificatesSection';
 import { ResumeSection } from './sections/ResumeSection';
+import { SocialMediaSection } from './sections/SocialMediaSection';
 import { ContactSection } from './sections/ContactSection';
 
 function App() {
@@ -35,6 +36,7 @@ function App() {
               <SkillsSection />
               <ExpertInSoftwareSection />
               <ProjectsSection />
+              <SocialMediaSection />
               <CertificatesSection />
               <ResumeSection />
               <ContactSection />

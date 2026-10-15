@@ -1,3 +1,17 @@
+export interface Project {
+  id: string;
+  title: string;
+  description: string;
+  category: string;
+  technologies: string[];
+  image: string;
+  images?: string[];
+  videoUrl?: string;
+  iframeUrl?: string;
+  github?: string;
+  live?: string;
+}
+
 export const portfolioData = {
   personalInfo: {
     name: "AMIT",
@@ -10,7 +24,7 @@ export const portfolioData = {
     ],
     resumeUrl: "/Amit_Resume.pdf",
     social: {
-      email: "mailto:amit20052020@gmail.com",
+      email: "mailto:aimeryadav@gmail.com",
       phone: "+91 8840050560",
       github: "https://github.com/aimeryadav",
       linkedin: "https://linkedin.com/in/aimeryadav",
@@ -22,11 +36,11 @@ export const portfolioData = {
     {
       category: "Computer Science & Development",
       items: [
-        "C", "C++", "Python", "JavaScript", "HTML5", "CSS3", 
-        "Data Structures & Algorithms", "Object-Oriented Programming", 
-        "GitHub", "Web Development", "Machine Learning", "NumPy", 
-        "Blockchain", "Cloud Computing", "Computer Networks", 
-        "Operating Systems", "Git"
+        "React", "Node.js", "Express.js", "MongoDB", "Mongoose", "RESTful APIs", "JWT Authentication",
+        "TypeScript", "Tailwind CSS", "Vite", "Framer Motion", "JavaScript (ES6+)", "HTML5", "CSS3", 
+        "Full-Stack Web Development", "Responsive UI/UX Design", "C", "C++", "Python", 
+        "Data Structures & Algorithms", "Object-Oriented Programming", "GitHub", "Git", 
+        "Machine Learning", "NumPy", "Blockchain", "Cloud Computing", "Computer Networks", "Operating Systems"
       ]
     },
     {
@@ -106,28 +120,72 @@ export const portfolioData = {
       title: "Aimer Studios",
       description: "A creative studio portfolio demonstrating modern UI/UX principles, featuring dynamic content and a responsive design.",
       category: "Development",
-      technologies: ["React", "TypeScript", "Tailwind CSS", "Vite"],
+      technologies: [
+        "React 19",
+        "TypeScript",
+        "Tailwind CSS v4",
+        "Vite",
+        "Framer Motion",
+        "Lenis Scroll",
+        "Lucide Icons",
+        "HTML5 & CSS3",
+        "JavaScript (ES6+)",
+        "Responsive UI/UX",
+        "Git & GitHub"
+      ],
       image: "https://images.unsplash.com/photo-1555066931-4365d14bab8c?q=80&w=2070&auto=format&fit=crop",
-      videoUrl: "/aimer-studios.mp4",
-      github: "https://github.com",
-      live: "https://aimer-studios-gwifefdb6-aimer-yadav.vercel.app/"
+      videoUrl: "/aimer-studios.mp4?v=2",
+      github: "https://github.com/aimeryadav",
+      live: "https://www.aimerstudios.in"
     },
     {
       id: "project-2",
-      title: "Cinematic Music Video",
-      description: "Directed, shot, and edited a full music video with advanced color grading and VFX integration.",
-      category: "Filmmaking",
-      technologies: ["Premiere Pro", "After Effects", "DaVinci Resolve"],
-      image: "https://images.unsplash.com/photo-1492691527719-9d1e07e534b4?q=80&w=2071&auto=format&fit=crop",
-      live: "https://youtube.com"
+      title: "RVITM CSE Department Website",
+      category: "Full-Stack Development",
+      description: "Modern Computer Science & Engineering department web platform built with a clean, responsive interface to showcase academic resources, faculty directory, student placements, and dynamic notice boards.",
+      technologies: [
+        "React 19",
+        "Node.js",
+        "Express 5",
+        "MongoDB",
+        "Mongoose ODM",
+        "REST APIs",
+        "JWT Auth",
+        "Bcrypt",
+        "Axios",
+        "React Router",
+        "Context API",
+        "Vite",
+        "Role-Based Access (RBAC)",
+        "Responsive UI/UX"
+      ],
+      image: "/college-website-1.jpg",
+      images: [
+        "/college-website-1.jpg",
+        "/college-website-2.jpg",
+        "/college-website-3.jpg",
+        "/college-website-4.jpg"
+      ],
+      github: "https://github.com/aimeryadav/College-Website",
+      live: "https://college-website-flax-ten.vercel.app/"
     },
     {
       id: "project-3",
-      title: "AI-Generated Concept Art",
-      description: "A series of conceptual artworks created using advanced prompt engineering and AI image generation workflows.",
-      category: "Generative AI",
-      technologies: ["Midjourney", "Stable Diffusion", "Photoshop"],
-      image: "https://images.unsplash.com/photo-1620641788421-7a1c342ea42e?q=80&w=1974&auto=format&fit=crop"
+      title: "Creative Developer Portfolio",
+      description: "Interactive personal portfolio featuring dynamic theme switching, fluid animations, custom cursor mechanics, responsive architecture, and modular sections.",
+      category: "Frontend Engineering",
+      technologies: [
+        "React 19",
+        "TypeScript",
+        "Tailwind CSS v4",
+        "Vite",
+        "Framer Motion",
+        "Lenis Scroll",
+        "Lucide Icons",
+        "Responsive UI/UX"
+      ],
+      image: "/portfolio-preview.jpg",
+      github: "https://github.com/aimeryadav/Portfolio"
     },
     {
       id: "project-4",
@@ -138,7 +196,7 @@ export const portfolioData = {
       image: "https://images.unsplash.com/photo-1598488035139-bdbb2231ce04?q=80&w=2070&auto=format&fit=crop",
       live: "https://spotify.com"
     }
-  ],
+  ] as Project[],
   certificates: [
     {
       id: "be10x-ai-tools",
@@ -210,6 +268,7 @@ export const portfolioData = {
     "Tell me about his internship and recommendation.": "Amit completed an internship under the Executive Leadership Program at AnalytixLabs (March–May 2025). He led campus outreach, event coordination, content creation, and community management. He received an official Letter of Recommendation from Director Sumit Shukla and Raunak Verma from the Founder's Office commending his leadership and initiative.",
     "What technologies does Amit know?": "I am proficient in C, C++, Python, JavaScript, HTML, CSS, React, and various tools for AI and media production.",
     "Tell me about Amit.": "I am a final-year CS student and a multidisciplinary creator spanning technology, music, filmmaking, and design.",
+    "Tell me about his experience.": "Amit brings over 7 years of social media strategy and digital growth, 5+ years of content writing and creative copywriting, 2+ years of music production and composition, along with freelance consulting experience working with Modicare and political campaigns.",
     "What are his creative skills?": "I work as a Writer, Director, Singer, Rapper, Composer, Music Producer, Post-Production Specialist, and Designer.",
     "What software does he use?": "My primary software stack includes Adobe Premiere Pro, After Effects, Photoshop, DaVinci Resolve, Ableton Live, Pro Tools, Canva, and Figma.",
     "Show me his projects.": "You can explore my projects in the Projects section below, which includes web development, filmmaking, music production, and AI art.",

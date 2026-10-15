@@ -6,7 +6,7 @@ import { ContactForm } from '../components/ContactForm';
 
 export function ContactSection() {
   const [copiedEmail, setCopiedEmail] = useState(false);
-  const rawEmail = 'amit20052020@gmail.com';
+  const rawEmail = 'aimeryadav@gmail.com';
 
   const handleCopyEmail = () => {
     navigator.clipboard.writeText(rawEmail);
@@ -66,26 +66,11 @@ export function ContactSection() {
       <div className="container mx-auto px-6 md:px-12 max-w-7xl">
         
         {/* Section Header */}
-        <div className="flex items-center gap-4 mb-14 w-full">
+        <div className="mb-14 w-full">
           <h2 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-black uppercase tracking-tight text-foreground leading-none flex items-center gap-3">
             <span>GET IN TOUCH</span>
             <span className="text-3xl sm:text-4xl md:text-5xl">🤝</span>
           </h2>
-
-          <div className="flex items-center flex-1 max-w-[160px] sm:max-w-[220px] md:max-w-[280px]">
-            <div className="h-[2px] md:h-[3px] w-full bg-[#7A2635] dark:bg-[#A94655] transition-colors duration-300" />
-            <svg 
-              viewBox="0 0 48 48" 
-              fill="none" 
-              xmlns="http://www.w3.org/2000/svg" 
-              className="w-9 h-9 sm:w-11 sm:h-11 md:w-13 md:h-13 text-[#7A2635] dark:text-[#A94655] -ml-2 shrink-0 drop-shadow-sm transition-colors duration-300"
-            >
-              <path 
-                d="M24 0 C24 13.25 34.75 24 48 24 C34.75 24 24 34.75 24 48 C24 34.75 13.25 24 0 24 C13.25 24 24 13.25 24 0 Z" 
-                fill="currentColor"
-              />
-            </svg>
-          </div>
         </div>
 
         {/* Two-Column Card-Based Grid */}

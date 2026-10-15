@@ -43,11 +43,6 @@ export function Navbar() {
 
           {/* Right: Nav Links */}
           <nav className="hidden lg:flex items-center gap-2">
-            {/* 4-point sparkle star with Burgundy accent */}
-            <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" className="w-4 h-4 text-[#7A2635] dark:text-[#A94655] mr-2 shrink-0 transition-colors">
-              <path d="M12 0 C12 6.6 17.4 12 24 12 C17.4 12 12 17.4 12 24 C12 17.4 6.6 12 0 12 C6.6 12 12 6.6 12 0 Z" fill="currentColor"/>
-            </svg>
-
             {links.map((link, index) => (
               <div key={link.name} className="flex items-center">
                 <a

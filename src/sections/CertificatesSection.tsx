@@ -59,24 +59,10 @@ export function CertificatesSection() {
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between gap-6 mb-12 w-full">
           <div>
-            <div className="flex items-center gap-4 mb-3">
+            <div className="mb-3">
               <h2 className="text-4xl sm:text-5xl md:text-6xl font-black uppercase tracking-tight text-foreground leading-none">
                 CERTIFICATES & RECOMMENDATION
               </h2>
-              <div className="hidden sm:flex items-center flex-1 max-w-[140px] md:max-w-[200px]">
-                <div className="h-[2px] md:h-[3px] w-full bg-[#7A2635] dark:bg-[#A94655] transition-colors duration-300" />
-                <svg 
-                  viewBox="0 0 48 48" 
-                  fill="none" 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  className="w-8 h-8 md:w-10 md:h-10 text-[#7A2635] dark:text-[#A94655] -ml-2 shrink-0 drop-shadow-sm transition-colors duration-300"
-                >
-                  <path 
-                    d="M24 0 C24 13.25 34.75 24 48 24 C34.75 24 24 34.75 24 48 C24 34.75 13.25 24 0 24 C13.25 24 24 13.25 24 0 Z" 
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
             </div>
             <p className="text-sm md:text-base text-foreground/75 max-w-2xl font-medium">
               Verified certifications, leadership achievements, and executive letters of recommendation.

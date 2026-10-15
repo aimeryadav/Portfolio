@@ -38,7 +38,7 @@ export function validateContactPayload(payload: ContactPayload): Record<string, 
 }
 
 /**
- * Client-side submission helper that delivers directly to amit20052020@gmail.com
+ * Client-side submission helper that delivers directly to aimeryadav@gmail.com
  * Powered by FormSubmit.co AJAX endpoint (free, serverless, direct inbox delivery).
  */
 export async function submitContactMessage(payload: ContactPayload): Promise<ContactApiResponse> {
@@ -48,7 +48,7 @@ export async function submitContactMessage(payload: ContactPayload): Promise<Con
     throw new Error(Object.values(errors)[0]);
   }
 
-  const response = await fetch('https://formsubmit.co/ajax/amit20052020@gmail.com', {
+  const response = await fetch('https://formsubmit.co/ajax/aimeryadav@gmail.com', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',

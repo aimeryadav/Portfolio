@@ -36,6 +36,8 @@ export function HeroSection() {
       document.getElementById('resume')?.scrollIntoView({ behavior: 'smooth' });
     } else if (lower.includes('contact') || lower.includes('email') || lower.includes('phone') || lower.includes('hire')) {
       document.getElementById('contact')?.scrollIntoView({ behavior: 'smooth' });
+    } else if (lower.includes('social') || lower.includes('instagram') || lower.includes('youtube') || lower.includes('twitter') || lower.includes('follow') || lower.includes('account')) {
+      document.getElementById('social')?.scrollIntoView({ behavior: 'smooth' });
     } else if (lower.includes('about') || lower.includes('who is') || lower.includes('aimer') || lower.includes('amit')) {
       document.getElementById('about')?.scrollIntoView({ behavior: 'smooth' });
     }
@@ -86,26 +88,11 @@ export function HeroSection() {
             transition={{ duration: 0.9, ease: "easeOut", delay: 0.2 }}
             className="lg:col-span-6 flex flex-col items-start lg:pl-4 xl:pl-8"
           >
-            {/* AMIT —✦ with Burgundy accent */}
-            <div className="flex items-center gap-4 mb-3 w-full">
+            {/* AMIT */}
+            <div className="mb-3 w-full">
               <h1 className="text-6xl sm:text-7xl md:text-8xl lg:text-[94px] xl:text-[112px] 2xl:text-[124px] font-black uppercase tracking-tight text-foreground leading-none">
                 {portfolioData.personalInfo.name}
               </h1>
-              
-              <div className="flex items-center flex-1 max-w-[180px] sm:max-w-[240px] md:max-w-[320px]">
-                <div className="h-[2px] md:h-[3px] w-full bg-[#7A2635] dark:bg-[#A94655] transition-colors duration-300" />
-                <svg 
-                  viewBox="0 0 48 48" 
-                  fill="none" 
-                  xmlns="http://www.w3.org/2000/svg" 
-                  className="w-10 h-10 sm:w-12 sm:h-12 md:w-15 md:h-15 lg:w-18 lg:h-18 text-[#7A2635] dark:text-[#A94655] -ml-2 shrink-0 drop-shadow-sm transition-colors duration-300"
-                >
-                  <path 
-                    d="M24 0 C24 13.25 34.75 24 48 24 C34.75 24 24 34.75 24 48 C24 34.75 13.25 24 0 24 C13.25 24 24 13.25 24 0 Z" 
-                    fill="currentColor"
-                  />
-                </svg>
-              </div>
             </div>
 
             {/* Subtitle Info */}

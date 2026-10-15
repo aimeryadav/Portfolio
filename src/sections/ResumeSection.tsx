@@ -25,24 +25,10 @@ export function ResumeSection() {
         
         {/* RESUME —✦ Section Header */}
         <div className="flex items-center justify-between gap-4 mb-16 w-full">
-          <div className="flex items-center gap-4">
+          <div>
             <h2 className="text-5xl sm:text-6xl md:text-7xl font-black uppercase tracking-tight text-foreground leading-none">
               RESUME
             </h2>
-            <div className="flex items-center max-w-[180px] md:max-w-[240px] flex-1">
-              <div className="h-[2px] md:h-[3px] w-full bg-[#7A2635] dark:bg-[#A94655] transition-colors duration-300" />
-              <svg 
-                viewBox="0 0 48 48" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg" 
-                className="w-10 h-10 md:w-14 md:h-14 text-[#7A2635] dark:text-[#A94655] -ml-2 shrink-0 drop-shadow-sm transition-colors duration-300"
-              >
-                <path 
-                  d="M24 0 C24 13.25 34.75 24 48 24 C34.75 24 24 34.75 24 48 C24 34.75 13.25 24 0 24 C13.25 24 24 13.25 24 0 Z" 
-                  fill="currentColor"
-                />
-              </svg>
-            </div>
           </div>
 
           {/* Quick Action Badges */}
@@ -92,10 +78,10 @@ export function ResumeSection() {
             {/* Contact Chips */}
             <div className="flex flex-wrap items-center gap-2.5 text-xs font-semibold text-foreground/75">
               <a 
-                href="mailto:amit20052020@gmail.com"
+                href="mailto:aimeryadav@gmail.com"
                 className="flex items-center gap-1.5 px-3 py-1.5 rounded-full bg-slate-200/70 dark:bg-[#C04365]/[0.25] border border-slate-300/60 dark:border-[#C04365]/30 hover:text-[#7A2635] dark:hover:text-[#FFA3B8] transition-colors"
               >
-                <Mail size={13} className="text-[#7A2635] dark:text-[#FFA3B8]" /> amit20052020@gmail.com
+                <Mail size={13} className="text-[#7A2635] dark:text-[#FFA3B8]" /> aimeryadav@gmail.com
               </a>
               <a 
                 href="tel:+918840050560"
@@ -190,6 +176,75 @@ export function ResumeSection() {
                 </div>
 
                 <div className="space-y-4 pl-4 border-l-2 border-[#7A2635]/30 dark:border-[#FFA3B8]/30">
+                  {/* Social Media Experience */}
+                  <div className="p-4 rounded-xl bg-slate-200/50 dark:bg-[#C04365]/[0.15] border border-slate-300/40 dark:border-[#C04365]/25">
+                    <div className="flex items-center justify-between mb-1.5 flex-wrap gap-1">
+                      <h5 className="text-sm font-bold text-foreground">
+                        Social Media Strategist & Growth Lead — Independent & Brand Consultant
+                      </h5>
+                      <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-black/10 dark:bg-white/10 text-[#7A2635] dark:text-[#FFA3B8]">
+                        7+ Years Experience
+                      </span>
+                    </div>
+                    <ul className="text-xs text-foreground/85 leading-relaxed space-y-1 list-disc pl-4 font-medium">
+                      <li>Spearheaded 7+ years of end-to-end digital growth, channel branding, and content operations across YouTube, Instagram, X, and Facebook.</li>
+                      <li>Produced high-engagement short-form and cinematic long-form video campaigns, generating multi-million organic impressions and building loyal audiences.</li>
+                      <li>Expert in viral content algorithms, hook & thumbnail strategies, community moderation, and cross-platform analytics.</li>
+                    </ul>
+                  </div>
+
+                  {/* Freelance with Modicare & Political Parties */}
+                  <div className="p-4 rounded-xl bg-slate-200/50 dark:bg-[#C04365]/[0.15] border border-slate-300/40 dark:border-[#C04365]/25">
+                    <div className="flex items-center justify-between mb-1.5 flex-wrap gap-1">
+                      <h5 className="text-sm font-bold text-foreground">
+                        Freelance Media & Campaign Strategist — Modicare & Political Campaigns
+                      </h5>
+                      <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-black/10 dark:bg-white/10 text-[#7A2635] dark:text-[#FFA3B8]">
+                        Freelance Consultant
+                      </span>
+                    </div>
+                    <ul className="text-xs text-foreground/85 leading-relaxed space-y-1 list-disc pl-4 font-medium">
+                      <li>Strategized and crafted public outreach campaigns, promotional digital assets, and election media drives for political parties.</li>
+                      <li>Delivered brand promotion materials, campaign narratives, and high-impact digital collateral for Modicare products and distributor networks.</li>
+                      <li>Coordinated multi-channel messaging, voter/consumer engagement strategies, speechwriting, and rapid-response campaign content.</li>
+                    </ul>
+                  </div>
+
+                  {/* Content Writing Experience */}
+                  <div className="p-4 rounded-xl bg-slate-200/50 dark:bg-[#C04365]/[0.15] border border-slate-300/40 dark:border-[#C04365]/25">
+                    <div className="flex items-center justify-between mb-1.5 flex-wrap gap-1">
+                      <h5 className="text-sm font-bold text-foreground">
+                        Senior Content Writer & Creative Copywriter — Freelance & Studios
+                      </h5>
+                      <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-black/10 dark:bg-white/10 text-[#7A2635] dark:text-[#FFA3B8]">
+                        5+ Years Experience
+                      </span>
+                    </div>
+                    <ul className="text-xs text-foreground/85 leading-relaxed space-y-1 list-disc pl-4 font-medium">
+                      <li>5+ years authoring compelling video scripts, brand narratives, commercial copy, press releases, and articles across tech, music, and politics.</li>
+                      <li>Wrote storytelling scripts for short films, YouTube deep-dives, marketing ads, and promotional campaign decks.</li>
+                      <li>Combined sharp analytical tone with emotive creative hooks to consistently boost audience conversion and engagement.</li>
+                    </ul>
+                  </div>
+
+                  {/* Music Production Experience */}
+                  <div className="p-4 rounded-xl bg-slate-200/50 dark:bg-[#C04365]/[0.15] border border-slate-300/40 dark:border-[#C04365]/25">
+                    <div className="flex items-center justify-between mb-1.5 flex-wrap gap-1">
+                      <h5 className="text-sm font-bold text-foreground">
+                        Music Producer, Composer & Songwriter — Aimer Yadav / Independent
+                      </h5>
+                      <span className="text-[10px] font-extrabold uppercase px-2 py-0.5 rounded bg-black/10 dark:bg-white/10 text-[#7A2635] dark:text-[#FFA3B8]">
+                        2+ Years Experience
+                      </span>
+                    </div>
+                    <ul className="text-xs text-foreground/85 leading-relaxed space-y-1 list-disc pl-4 font-medium">
+                      <li>2+ years producing, composing, singing, rapping, and writing original tracks spanning hip-hop, melodic hooks, and audio soundtracks.</li>
+                      <li>Managed end-to-end studio pipeline: beat arrangement, lyricism, vocal recording, sound design, audio editing, mixing, and mastering.</li>
+                      <li>Published independent releases streaming across Spotify, Apple Music, and YouTube.</li>
+                    </ul>
+                  </div>
+
+                  {/* AnalytixLabs Leadership Intern */}
                   <div className="p-4 rounded-xl bg-slate-200/50 dark:bg-[#C04365]/[0.15] border border-slate-300/40 dark:border-[#C04365]/25">
                     <div className="flex items-center justify-between mb-1.5 flex-wrap gap-1">
                       <h5 className="text-sm font-bold text-foreground">
